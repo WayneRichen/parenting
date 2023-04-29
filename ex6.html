@@ -86,11 +86,8 @@
   <div class="content">
     <h1>三部曲 培養──從啟動到持續</h1>
     <p>當探索有成，興趣已被啟動，也規劃了投入的時間，接下來就需要養成持續的習慣，來培養興趣。善用以下方法，可以提高持續力：</p>
-    <p id="list">（1） 訂定短中長程目標。巧妙運用考試、檢定、競賽、表演，甚至觀摩別人的學習成果，都能發揮自我激勵的作用。（2）
+    <p id="padding">（1） 訂定短中長程目標。巧妙運用考試、檢定、競賽、表演，甚至觀摩別人的學習成果，都能發揮自我激勵的作用。（2）
       訂定目標完成時間表。找一位指導老師或前輩，討論完成每個階段目標的進度，也可以請指導者定期檢查你的進度，提供回饋意見。（3） 養成習慣。鼓勵孩子安排固定時間練習投入興趣，以養成習慣，一旦習慣夠深刻，就可以放手讓孩子自己掌握。
-    </p>
-    <p id="list2" style="display: none;"><b>（1） 訂定短中長程目標。</b>巧妙運用考試、檢定、競賽、表演，甚至觀摩別人的學習成果，都能發揮自我激勵的作用。<br><b>（2）
-      訂定目標完成時間表。</b>找一位指導老師或前輩，討論完成每個階段目標的進度，也可以請指導者定期檢查你的進度，提供回饋意見。<br><b>（3） 養成習慣。</b>鼓勵孩子安排固定時間練習投入興趣，以養成習慣，一旦習慣夠深刻，就可以放手讓孩子自己掌握。
     </p>
     <p>才藝的層級一般可以分為初學者、中級、高級、專業水準與大師級。休閒興趣只要能保持在中級，也就是可以自學的程度，其實就已經非常足夠了。</p>
     <img id="img" src="https://cw1.tw/CP/images/article/P1397634874266.jpg" style="max-width: 100%; display: none;" />
@@ -98,25 +95,21 @@
   </div>
 
   <script>
-    let list = document.getElementById('list');
-    let list2 = document.getElementById('list2');
+    let padding = document.getElementById('padding');
     let img = document.getElementById('img');
     let background = document.getElementById('background');
     function style1() {
-      list.style.display = 'block';
-      list2.style.display = 'none';
+      padding.style.padding = '';
       img.style.display = 'none';
       background.style.backgroundColor = '';
     }
     function style2() {
-      list.style.display = 'none';
-      list2.style.display = 'block';
+      padding.style.padding = '10px 0px';
       img.style.display = 'block';
       background.style.backgroundColor = '#FFFFE0';
     }
     function different() {
-      list.classList.toggle('different');
-      list2.classList.toggle('different');
+      padding.classList.toggle('different');
       img.classList.toggle('different');
       background.classList.toggle('different');
     }

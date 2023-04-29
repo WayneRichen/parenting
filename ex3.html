@@ -40,6 +40,13 @@
       background-color: #ccc;
     }
 
+    .menu ul li button {
+      border: none;
+      margin-top: 10px;
+      padding: 5px 0px;
+      width: 100%;
+    }
+
     /* 文章內容樣式 */
     .content {
       margin-left: 220px;
@@ -53,6 +60,11 @@
       font-size: 24px;
       margin-top: 30px;
     }
+
+    .different {
+      background-color: #FFE4E1;
+      padding: 5px;
+    }
   </style>
 </head>
 
@@ -65,13 +77,33 @@
       <li><a href="/ex4.html">首部曲 探索──從廣到深</a></li>
       <li><a href="/ex5.html">二部曲 規劃──從被動到主動</a></li>
       <li><a href="/ex6.html">三部曲 培養──從啟動到持續</a></li>
+      <li><button id="button1" onclick="style1()">風格1</button></li>
+      <li><button id="button2" onclick="style2()">風格2</button></li>
+      <li><button id="button3" onclick="different()">差異</button></li>
     </ul>
   </div>
 
   <div class="content">
-    <h1>「興趣」發展三部曲</h1>
-    <p>興趣如此重要，應如何幫助孩子發展興趣呢？</p>
+    <h1 id="title">「興趣」發展三部曲</h1>
+    <p id="italic">興趣如此重要，應如何幫助孩子發展興趣呢？</p>
   </div>
+
+  <script>
+    let title = document.getElementById('title');
+    let italic = document.getElementById('italic');
+    function style1() {
+      title.style.fontSize = '';
+      italic.style.fontStyle = '';
+    }
+    function style2() {
+      title.style.color = '#A9A9A9';
+      italic.style.fontStyle = 'italic';
+    }
+    function different() {
+      title.classList.toggle('different');
+      italic.classList.toggle('different');
+    }
+  </script>
 </body>
 
 </html>

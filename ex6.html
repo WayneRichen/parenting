@@ -40,6 +40,13 @@
       background-color: #ccc;
     }
 
+    .menu ul li button {
+      border: none;
+      margin-top: 10px;
+      padding: 5px 0px;
+      width: 100%;
+    }
+
     /* 文章內容樣式 */
     .content {
       margin-left: 220px;
@@ -53,6 +60,11 @@
       font-size: 24px;
       margin-top: 30px;
     }
+
+    .different {
+      background-color: #FFE4E1 !important;
+      padding: 5px;
+    }
   </style>
 </head>
 
@@ -65,18 +77,43 @@
       <li><a href="/ex4.html">首部曲 探索──從廣到深</a></li>
       <li><a href="/ex5.html">二部曲 規劃──從被動到主動</a></li>
       <li><a href="/ex6.html">三部曲 培養──從啟動到持續</a></li>
+      <li><button id="button1" onclick="style1()">風格1</button></li>
+      <li><button id="button2" onclick="style2()">風格2</button></li>
+      <li><button id="button3" onclick="different()">差異</button></li>
     </ul>
   </div>
 
   <div class="content">
     <h1>三部曲 培養──從啟動到持續</h1>
     <p>當探索有成，興趣已被啟動，也規劃了投入的時間，接下來就需要養成持續的習慣，來培養興趣。善用以下方法，可以提高持續力：</p>
-    <p>（1） 訂定短中長程目標。巧妙運用考試、檢定、競賽、表演，甚至觀摩別人的學習成果，都能發揮自我激勵的作用。（2）
+    <p id="padding">（1） 訂定短中長程目標。巧妙運用考試、檢定、競賽、表演，甚至觀摩別人的學習成果，都能發揮自我激勵的作用。（2）
       訂定目標完成時間表。找一位指導老師或前輩，討論完成每個階段目標的進度，也可以請指導者定期檢查你的進度，提供回饋意見。（3） 養成習慣。鼓勵孩子安排固定時間練習投入興趣，以養成習慣，一旦習慣夠深刻，就可以放手讓孩子自己掌握。
     </p>
     <p>才藝的層級一般可以分為初學者、中級、高級、專業水準與大師級。休閒興趣只要能保持在中級，也就是可以自學的程度，其實就已經非常足夠了。</p>
-    <p>十二年國教啟動之後，學習緊箍咒將逐漸鬆綁，學習機會也會更多元。父母一定要為孩子留白，讓孩子有足夠的時間來耕耘興趣，持續養成習慣，發展成長遠的興趣，追求一生的熱愛。（採訪整理│江美滿）</p>
+    <img id="img" src="https://cw1.tw/CP/images/article/P1397634874266.jpg" style="max-width: 100%; display: none;" />
+    <p id="background">十二年國教啟動之後，學習緊箍咒將逐漸鬆綁，學習機會也會更多元。父母一定要為孩子留白，讓孩子有足夠的時間來耕耘興趣，持續養成習慣，發展成長遠的興趣，追求一生的熱愛。（採訪整理│江美滿）</p>
   </div>
+
+  <script>
+    let padding = document.getElementById('padding');
+    let img = document.getElementById('img');
+    let background = document.getElementById('background');
+    function style1() {
+      padding.style.padding = '';
+      img.style.display = 'none';
+      background.style.backgroundColor = '';
+    }
+    function style2() {
+      padding.style.padding = '10px 0px';
+      img.style.display = 'block';
+      background.style.backgroundColor = '#FFFFE0';
+    }
+    function different() {
+      padding.classList.toggle('different');
+      img.classList.toggle('different');
+      background.classList.toggle('different');
+    }
+  </script>
 </body>
 
 </html>

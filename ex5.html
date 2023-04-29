@@ -40,13 +40,6 @@
       background-color: #ccc;
     }
 
-    .menu ul li button {
-      border: none;
-      margin-top: 10px;
-      padding: 5px 0px;
-      width: 100%;
-    }
-
     /* 文章內容樣式 */
     .content {
       margin-left: 220px;
@@ -60,11 +53,6 @@
       font-size: 24px;
       margin-top: 30px;
     }
-
-    .different {
-      background-color: #FFE4E1 !important;
-      padding: 5px;
-    }
   </style>
 </head>
 
@@ -77,32 +65,16 @@
       <li><a href="/ex4.html">首部曲 探索──從廣到深</a></li>
       <li><a href="/ex5.html">二部曲 規劃──從被動到主動</a></li>
       <li><a href="/ex6.html">三部曲 培養──從啟動到持續</a></li>
-      <li><button id="button1" onclick="style1()">風格1</button></li>
-      <li><button id="button2" onclick="style2()">風格2</button></li>
-      <li><button id="button3" onclick="different()">差異</button></li>
     </ul>
   </div>
 
-  <div class="content" id="content">
+  <div class="content">
     <h1>二部曲 規劃──從被動到主動</h1>
     <p>小學中年級之前，在發展興趣這件事情上，多數孩子都是被動的，需要父母安排。在安排的過程當中剛好觸動孩子的興趣，孩子自然就往那個方向去。</p>
     <p>
       然而，興趣的發展需要孩子自身持續不斷的投入，所以需要在青春期到來之前，將規劃權移轉給孩子，他才能自動自發。國小高年級開始，可以透過親子對談，讓孩子試著規劃自己的興趣發展。像我家孩子音樂還算有點天分，小提琴也學得不錯，但國小中年級之後，就確定不打算走音樂班的路，所以會開始想要不要繼續學？多久上一次課？每週要花多少時間練習？除了小提琴，大女兒還喜歡電影、戲劇，小女兒則熱愛烹飪和舞蹈；這些，都需要她們主動規劃，如何去滿足多元興趣的需求。我鼓勵多和孩子聊聊，讓孩子自己做決定，尊重孩子的選擇；是他的決定，他就會比較主動。
     </p>
   </div>
-
-  <script>
-    let content = document.getElementById('content');
-    function style1() {
-      content.style.backgroundColor = '';
-    }
-    function style2() {
-      content.style.backgroundColor = '#D3D3D3 ';
-    }
-    function different() {
-      content.classList.toggle('different');
-    }
-  </script>
 </body>
 
 </html>
